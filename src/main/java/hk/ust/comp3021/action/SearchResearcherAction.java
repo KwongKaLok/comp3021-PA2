@@ -64,7 +64,7 @@ public class SearchResearcherAction extends Action {
 
     /**
      * TODO `searchFunc1` indicates the first searching criterion,
-     *    i.e., Search researchers who publish papers more than X times in the recent Y years
+     *    i.e., Search researchers who publish papers more than or equal to X times in the recent Y years
      * @param null
      * @return `actionResult` that contains the relevant researchers
      */
@@ -72,7 +72,7 @@ public class SearchResearcherAction extends Action {
 
     /**
      * TODO `searchFunc2` indicates the second searching criterion,
-     *    i.e., Search researchers whose papers published in the journal X have abstracts of which the length is more than Y.
+     *    i.e., Search researchers whose papers published in the journal X have abstracts of which the length is more than or equal to Y.
      * @param null
      * @return `actionResult` that contains the relevant researchers
      */
@@ -88,7 +88,7 @@ public class SearchResearcherAction extends Action {
 
     /**
      * TODO `searchFunc2` indicates the third searching criterion
-     *    i.e., Search researchers whoes keywords have more than similarity X% as one of those of the researcher Y.
+     *    i.e., Search researchers whoes keywords have more than or equal to similarity X% as one of those of the researcher Y.
      * @param null
      * @return `actionResult` that contains the relevant researchers
      * PS: 1) In this method, you are required to implement an extra method that calculates the Levenshtein Distance for
