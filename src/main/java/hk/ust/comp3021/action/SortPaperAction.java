@@ -62,14 +62,14 @@ public class SortPaperAction extends Action {
      * @param paper to be appended into `actionResult`
      * @return null
      */
-    public Consumer<Paper> appendToActionResultByLambda;
+    public Consumer<Paper> appendToActionResultByLambda = paper->this.actionResult.add(paper);
 
     /**
      * TODO `kindPredicate` determine whether the sort kind is `SortKind.DESCENDING`.
      * @param kind to be compared with `SortKind.DESCENDING`
      * @return boolean variable that indicates whether they are equal
      */
-    public Predicate<SortKind> kindPredicate;
+    public Predicate<SortKind> kindPredicate = SortKind->SortKind == SortKind.DESCENDING;
 
     /**
      * TODO `comparator` requires you to implement four custom comparators for different scenarios.
@@ -82,13 +82,74 @@ public class SortPaperAction extends Action {
      * PS2: if a and b are both null, then they are considered equal;
      * PS3: for the author comparison, we should compose the string of the author names separated by commas.
      */
-    public Comparator<Paper> comparator;
+//    public Comparator<Paper> comparator;
+    public Comparator<Paper> comparator = new Comparator<Paper>() {
+      @Override
+      public int compare(Paper paper1, Paper paper2) {
+          int result = 0;
+          
+          switch (base) {
+              case ID:
+                  if (paper1 == null) {
+                      result = -1;
+                  } else if (paper2 == null) {
+                      result = 1;
+                  } else {
+                      result = paper1.getPaperID().compareTo(paper2.getPaperID());
+//                      
+                  }
+                  break;
+              case TITLE:
+                  if (paper1 == null) {
+                      result = -1;
+                  } else if (paper2 == null) {
+                      result = 1;
+                  } else {
+                      result = paper1.getTitle().compareTo(paper2.getTitle());
+                  }
+                  break;
+              case AUTHOR:
+                  if (paper1 == null) {
+                      result = -1;
+                  } else if (paper2 == null) {
+                      result = 1;
+                  } else {
+                      String authors1 = String.join(",", paper1.getAuthors());
+                      String authors2 = String.join(",", paper2.getAuthors());
+                      result = authors1.compareTo(authors2);
+                  }
+                  break;
+              case JOURNAL:
+                  if (paper1 == null) {
+                      result = -1;
+                  } else if (paper2 == null) {
+                      result = 1;
+                  } else {
+                      result = paper1.getJournal().compareTo(paper2.getJournal());
+                  }
+                  break;
+          }
+          
+          if (kindPredicate.test(kind)) {
+              result *= -1;
+          }
+          
+          return result;
+      }
+  };
+
 
     /**
      * TODO `sortFunc` provides a unified interface for sorting papers
      * @param a list of papers to be sorted into `actionResult`
      * @return `actionResult` that contains the papers sorted in the specified order
      */
-    public Supplier<List<Paper>> sortFunc;
+    public Supplier<List<Paper>> sortFunc = ()->{
+      actionResult.sort(comparator);
+      if (kind == SortKind.DESCENDING) {
+          Collections.reverse(actionResult);
+      }
+      return actionResult;
+    };
 
 }

@@ -194,12 +194,28 @@ public class MiniMendeleyEngine {
         actions.add(action);
         switch (action.getKind()) {
             case ID:
+              paperBase.entrySet().stream()
+              .filter(entry -> action.isEqual.test(entry.getKey()))
+              .map(Map.Entry::getValue)
+              .forEach(action.appendToActionResultByLambda);
                 break;
             case TITLE:
+              paperBase.entrySet().stream()
+              .filter(entry->action.isEqual.test(entry.getValue().getTitle()))
+              .map(Map.Entry::getValue)
+              .forEach(action.appendToActionResultByLambda);
                 break;
             case AUTHOR:
+              paperBase.entrySet().stream()
+              .filter(entry -> action.isContain.test(entry.getValue().getAuthors()))
+              .map(Map.Entry::getValue)
+              .forEach(action.appendToActionResultByLambda);
                 break;
             case JOURNAL:
+              paperBase.entrySet().stream()
+              .filter(entry->action.isEqual.test(entry.getValue().getJournal()))
+              .map(Map.Entry::getValue)
+              .forEach(action.appendToActionResultByLambda);
                 break;
             default:
                 break;
@@ -220,6 +236,7 @@ public class MiniMendeleyEngine {
         });
         switch (action.getBase()) {
             case ID:
+            
                 break;
             case TITLE:
                 break;

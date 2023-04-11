@@ -63,12 +63,13 @@ public class SearchResearcherAction extends Action {
     }
 
     /**
-     * TODO `searchFunc1` indicates the first searching criterion,
+     * TODO `searchFunc1` indicates the first searching criterion, actionResult
      *    i.e., Search researchers who publish papers more than or equal to X times in the recent Y years
      * @param null
      * @return `actionResult` that contains the relevant researchers
      */
     public Supplier<HashMap<String, List<Paper>>> searchFunc1;
+     
 
     /**
      * TODO `searchFunc2` indicates the second searching criterion,
