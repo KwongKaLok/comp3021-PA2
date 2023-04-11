@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" tests="5" skipped="0" failures="4" errors="0" timestamp="2023-04-10T02:03:22" hostname="KadeMacBook-Air-6.local" time="0.021">
+<testsuite name="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" tests="5" skipped="0" failures="4" errors="0" timestamp="2023-04-11T16:19:13" hostname="KadeAir-6" time="0.02">
   <properties/>
   <testcase name="testSortPaperAction_SortByAuthor()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.008">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;7&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;1&gt; but was: &lt;7&gt;
@@ -188,7 +188,7 @@
 </failure>
   </testcase>
   <testcase name="testSortPaperAction_ActionsSize()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.002"/>
-  <testcase name="testSortPaperAction_SortByID()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.003">
+  <testcase name="testSortPaperAction_SortByID()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.002">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;Abdulla2016&gt; but was: &lt;Zhou2022&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Abdulla2016&gt; but was: &lt;Zhou2022&gt;
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -281,7 +281,7 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testSortPaperAction_SortByJournal()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.003">
+  <testcase name="testSortPaperAction_SortByJournal()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.002">
     <failure message="java.lang.NullPointerException: Cannot invoke &quot;String.compareTo(String)&quot; because the return value of &quot;hk.ust.comp3021.resource.Paper.getJournal()&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;String.compareTo(String)&quot; because the return value of &quot;hk.ust.comp3021.resource.Paper.getJournal()&quot; is null
 	at hk.ust.comp3021.action.SortPaperAction$1.compare(SortPaperAction.java:128)
 	at hk.ust.comp3021.action.SortPaperAction$1.compare(SortPaperAction.java:86)

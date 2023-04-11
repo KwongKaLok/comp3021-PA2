@@ -35,7 +35,8 @@
 <file name="/Users/kalokkwong/comp_3021/COMP3021-2023Spring-PA2-Skeleton/src/main/java/hk/ust/comp3021/action/AddCommentAction.java">
 </file>
 <file name="/Users/kalokkwong/comp_3021/COMP3021-2023Spring-PA2-Skeleton/src/main/java/hk/ust/comp3021/action/SearchResearcherAction.java">
-<error line="84" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="79" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="100" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 </file>
 <file name="/Users/kalokkwong/comp_3021/COMP3021-2023Spring-PA2-Skeleton/src/main/java/hk/ust/comp3021/action/AddLabelAction.java">
 </file>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hk.ust.comp3021.actions.UploadPaperActionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-04-10T02:03:22" hostname="KadeMacBook-Air-6.local" time="0.019">
+<testsuite name="hk.ust.comp3021.actions.UploadPaperActionTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-04-11T16:19:13" hostname="KadeAir-6" time="0.011">
   <properties/>
-  <testcase name="testUploadPaperAction_CheckResearchInfo()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.003"/>
-  <testcase name="testUploadPaperAction_CheckPaperContent()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.003"/>
-  <testcase name="testUploadPaperAction_ActionsSize()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.003"/>
-  <testcase name="testUploadPaperAction_CheckPaperBase()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.003"/>
-  <testcase name="testUploadPaperAction_CheckPaperSet()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.002"/>
-  <testcase name="testUploadPaperAction_IsSuccessCheck()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.003"/>
+  <testcase name="testUploadPaperAction_CheckResearchInfo()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.002"/>
+  <testcase name="testUploadPaperAction_CheckPaperContent()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.002"/>
+  <testcase name="testUploadPaperAction_ActionsSize()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.002"/>
+  <testcase name="testUploadPaperAction_CheckPaperBase()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.001"/>
+  <testcase name="testUploadPaperAction_CheckPaperSet()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.001"/>
+  <testcase name="testUploadPaperAction_IsSuccessCheck()" classname="hk.ust.comp3021.actions.UploadPaperActionTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

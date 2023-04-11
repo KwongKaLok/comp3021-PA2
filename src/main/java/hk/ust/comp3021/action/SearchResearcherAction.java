@@ -3,6 +3,7 @@ package hk.ust.comp3021.action;
 import hk.ust.comp3021.resource.Paper;
 import hk.ust.comp3021.person.User;
 import java.util.*;
+import java.util.Map.Entry;
 import java.util.function.Supplier;
 
 public class SearchResearcherAction extends Action {
@@ -63,12 +64,39 @@ public class SearchResearcherAction extends Action {
     }
 
     /**
-     * TODO `searchFunc1` indicates the first searching criterion, actionResult
+     * TODO `searchFunc1` indicates the first searching criterion
      *    i.e., Search researchers who publish papers more than or equal to X times in the recent Y years
      * @param null
      * @return `actionResult` that contains the relevant researchers
      */
-    public Supplier<HashMap<String, List<Paper>>> searchFunc1;
+    public Supplier<HashMap<String, List<Paper>>> searchFunc1=()->{
+      int x=Integer.parseInt(searchFactorX);
+      int y=Integer.parseInt(searchFactorY);
+      Calendar cal = Calendar.getInstance();
+      int currentYear = cal.get(Calendar.YEAR);
+      // remove all researchers that have less paper than X without checking year
+      Iterator<Entry<String, List<Paper>>> iter = actionResult.entrySet().iterator(); 
+      while (iter.hasNext()) {
+          Entry<String, List<Paper>> entry = iter.next();
+          if (entry.getValue().size() < x) {
+              iter.remove();
+          }else {
+            //Check year
+            int yearCountXTimes = 0;
+            for (Paper paper : entry.getValue()) {
+
+              if(paper.getYear()>=(currentYear-y)) {
+                yearCountXTimes+=1;
+              }
+            }
+            //Check X times in the recent Y years
+            if(yearCountXTimes<x) {
+              iter.remove();
+            }
+          }
+      }
+      return actionResult;
+    };
      
 
     /**

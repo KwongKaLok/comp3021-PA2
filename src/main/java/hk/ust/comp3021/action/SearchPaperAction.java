@@ -60,13 +60,26 @@ public class SearchPaperAction extends Action {
      * @param string to be compared with `searchContent`
      * @return boolean variable that indicates whether they are equal
      */
-    public Predicate<String> isEqual = str->str.equals(searchContent) ;
+    public Predicate<String> isEqual = (String str)->{
+      if(str!=null) {
+        return str.equals(searchContent);
+      }else {
+        return false;
+      }
+    };
 
     /**
      * TODO `isContain` determines whether the array list contains `searchContent`.
      * @param arrayList to be determined for the containing issue
      * @return boolean variable that indicates whether the containing exists
      */
-    public Predicate<ArrayList<String>> isContain = list->list.contains(searchContent);
+//    public Predicate<ArrayList<String>> isContain = list->list.contains(searchContent);
+     public Predicate<ArrayList<String>> isContain = (ArrayList<String>list)->{
+       if(list!=null) {
+         return list.contains(searchContent);
+       }else {
+         return false;
+       }
+     };
 
 }
