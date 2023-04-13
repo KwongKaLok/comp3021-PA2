@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hk.ust.comp3021.actions.ProfileStatisticalInformationActionByLambdaTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2023-04-11T16:19:13" hostname="KadeAir-6" time="0.012">
+<testsuite name="hk.ust.comp3021.actions.ProfileStatisticalInformationActionByLambdaTest" tests="3" skipped="0" failures="3" errors="0" timestamp="2023-04-13T05:30:43" hostname="KadeAir-6" time="0.011">
   <properties/>
   <testcase name="testProfileStatisticalInformationAction_ProfileMaximal()" classname="hk.ust.comp3021.actions.ProfileStatisticalInformationActionByLambdaTest" time="0.004">
     <failure message="java.lang.NullPointerException: Cannot invoke &quot;java.util.function.Function.apply(Object)&quot; because &quot;action.obtainer2&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;java.util.function.Function.apply(Object)&quot; because &quot;action.obtainer2&quot; is null
-	at hk.ust.comp3021.MiniMendeleyEngine.processStatisticalInformationActionByLambda(MiniMendeleyEngine.java:297)
+	at hk.ust.comp3021.MiniMendeleyEngine.processStatisticalInformationActionByLambda(MiniMendeleyEngine.java:295)
 	at hk.ust.comp3021.actions.ProfileStatisticalInformationActionByLambdaTest.testProfileStatisticalInformationAction_ProfileMaximal(ProfileStatisticalInformationActionByLambdaTest.java:56)
 	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.lang.reflect.Method.invoke(Method.java:577)
@@ -91,7 +91,7 @@
   </testcase>
   <testcase name="testProfileStatisticalInformationAction_ActionsSize()" classname="hk.ust.comp3021.actions.ProfileStatisticalInformationActionByLambdaTest" time="0.004">
     <failure message="java.lang.NullPointerException: Cannot invoke &quot;java.util.function.Function.apply(Object)&quot; because &quot;action.obtainer1&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;java.util.function.Function.apply(Object)&quot; because &quot;action.obtainer1&quot; is null
-	at hk.ust.comp3021.MiniMendeleyEngine.processStatisticalInformationActionByLambda(MiniMendeleyEngine.java:294)
+	at hk.ust.comp3021.MiniMendeleyEngine.processStatisticalInformationActionByLambda(MiniMendeleyEngine.java:292)
 	at hk.ust.comp3021.actions.ProfileStatisticalInformationActionByLambdaTest.testProfileStatisticalInformationAction_ActionsSize(ProfileStatisticalInformationActionByLambdaTest.java:26)
 	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.lang.reflect.Method.invoke(Method.java:577)
@@ -177,9 +177,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testProfileStatisticalInformationAction_ProfileAverage()" classname="hk.ust.comp3021.actions.ProfileStatisticalInformationActionByLambdaTest" time="0.004">
+  <testcase name="testProfileStatisticalInformationAction_ProfileAverage()" classname="hk.ust.comp3021.actions.ProfileStatisticalInformationActionByLambdaTest" time="0.003">
     <failure message="java.lang.NullPointerException: Cannot invoke &quot;java.util.function.Function.apply(Object)&quot; because &quot;action.obtainer1&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke &quot;java.util.function.Function.apply(Object)&quot; because &quot;action.obtainer1&quot; is null
-	at hk.ust.comp3021.MiniMendeleyEngine.processStatisticalInformationActionByLambda(MiniMendeleyEngine.java:294)
+	at hk.ust.comp3021.MiniMendeleyEngine.processStatisticalInformationActionByLambda(MiniMendeleyEngine.java:292)
 	at hk.ust.comp3021.actions.ProfileStatisticalInformationActionByLambdaTest.testProfileStatisticalInformationAction_ProfileAverage(ProfileStatisticalInformationActionByLambdaTest.java:40)
 	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.lang.reflect.Method.invoke(Method.java:577)

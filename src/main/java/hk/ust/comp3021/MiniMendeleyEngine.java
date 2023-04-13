@@ -272,7 +272,6 @@ public class MiniMendeleyEngine {
             case KEYWORD_SIMILARITY:
                 action.searchFunc3.get();
                 break;
-
             default:
                 break;
         }
