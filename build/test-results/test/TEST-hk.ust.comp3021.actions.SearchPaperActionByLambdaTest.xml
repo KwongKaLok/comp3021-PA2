@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-13T05:30:43" hostname="KadeAir-6" time="0.01">
+<testsuite name="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-13T11:27:38" hostname="KadeAir-6" time="0.011">
   <properties/>
-  <testcase name="testSearchPaperAction_SearchByAuthor()" classname="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" time="0.003"/>
+  <testcase name="testSearchPaperAction_SearchByAuthor()" classname="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" time="0.002"/>
   <testcase name="testSearchPaperAction_ActionsSize()" classname="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" time="0.001"/>
   <testcase name="testSearchPaperAction_SearchByID()" classname="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" time="0.001"/>
-  <testcase name="testSearchPaperAction_SearchByTitle()" classname="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" time="0.002"/>
-  <testcase name="testSearchPaperAction_SearchByJournal()" classname="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" time="0.001"/>
+  <testcase name="testSearchPaperAction_SearchByTitle()" classname="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" time="0.003"/>
+  <testcase name="testSearchPaperAction_SearchByJournal()" classname="hk.ust.comp3021.actions.SearchPaperActionByLambdaTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

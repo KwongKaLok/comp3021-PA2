@@ -40,7 +40,7 @@ public class SortPaperActionByLambdaTest {
 
         SortPaperAction action1 = new SortPaperAction("Action_1", user, new Date(), SortBase.ID, SortKind.ASCENDING);
         List<Paper> searchResult1 = engine.processSortPaperActionByLambda(user, action1);
-
+//        System.out.print(searchResult1);
         assertEquals(searchResult1.size(), 123);
         assertEquals(searchResult1.get(0).getPaperID(), "Abdulla2016");
         assertEquals(searchResult1.get(5).getPaperID(), "Arndt2018");
@@ -48,6 +48,7 @@ public class SortPaperActionByLambdaTest {
 
         SortPaperAction action2 = new SortPaperAction("Action_2", user, new Date(), SortBase.ID, SortKind.DESCENDING);
         List<Paper> searchResult2 = engine.processSortPaperActionByLambda(user, action2);
+//        System.out.print(searchResult2);
 
         assertEquals(searchResult2.size(), 123);
         assertEquals(searchResult2.get(0).getPaperID(), "Zhou2022");

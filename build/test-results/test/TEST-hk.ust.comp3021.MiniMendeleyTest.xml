@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hk.ust.comp3021.MiniMendeleyTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-13T05:30:43" hostname="KadeAir-6" time="0.007">
+<testsuite name="hk.ust.comp3021.MiniMendeleyTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-13T11:27:38" hostname="KadeAir-6" time="0.007">
   <properties/>
   <testcase name="testPaperParser()" classname="hk.ust.comp3021.MiniMendeleyTest" time="0.004"/>
   <testcase name="testUserRegister()" classname="hk.ust.comp3021.MiniMendeleyTest" time="0.003"/>

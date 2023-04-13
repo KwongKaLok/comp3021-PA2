@@ -3,6 +3,7 @@ package hk.ust.comp3021.person;
 import hk.ust.comp3021.resource.Comment;
 import hk.ust.comp3021.resource.Label;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class User extends Person {
     private final Date registerDate;
@@ -39,8 +40,10 @@ public class User extends Person {
      * @return the list of comments based on the input id
      */
     public ArrayList<Comment> searchCommentByPaperObjIDByLambda(String id) {
-        ArrayList<Comment> res = new ArrayList<>();
-        return res;
+//        ArrayList<Comment> res = new ArrayList<>();
+        return(ArrayList<Comment>)userComments.stream()
+          .filter(comment->comment.getType() == Comment.CommentType.COMMENT_OF_PAPER&&comment.getCommentObjId().equals(id))
+          .collect(Collectors.toList());
     }
 
     public ArrayList<Comment> searchCommentByCommentObjID(String id) {
@@ -61,8 +64,9 @@ public class User extends Person {
      * @return the list of comments based on the input id
      */
     public ArrayList<Comment> searchCommentByCommentObjIDByLambda(String id) {
-        ArrayList<Comment> res = new ArrayList<>();
-        return res;
+      return(ArrayList<Comment>)userComments.stream()
+          .filter(comment->comment.getType() == Comment.CommentType.COMMENT_OF_COMMENT&&comment.getCommentObjId().equals(id))
+          .collect(Collectors.toList());
     }
 
     public void appendNewLabel(Label label) {
@@ -85,7 +89,10 @@ public class User extends Person {
      * @return the list of labels based on the input id
      */
     public ArrayList<Label> searchLabelByPaperIDByLambda(String id) {
-        ArrayList<Label> res = new ArrayList<>();
-        return res;
+//        ArrayList<Label> res = new ArrayList<>();
+//        return res;
+      return( ArrayList<Label>)userLabels.stream()
+          .filter(label -> label.getPaperID().equals(id))
+          .collect(Collectors.toList());
     }
 }

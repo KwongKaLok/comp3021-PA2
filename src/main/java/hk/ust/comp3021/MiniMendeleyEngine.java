@@ -15,6 +15,7 @@ import hk.ust.comp3021.action.SortPaperAction.*;
 import hk.ust.comp3021.action.StatisticalInformationAction.InfoKind;
 import hk.ust.comp3021.utils.UserRegister;
 import java.util.*;
+import java.util.Map.Entry;
 
 public class MiniMendeleyEngine {
     private final String defaultBibFilePath = "resources/bibdata/PAData.bib";
@@ -231,21 +232,8 @@ public class MiniMendeleyEngine {
      */
     public List<Paper> processSortPaperActionByLambda(User curUser, SortPaperAction action) {
         actions.add(action);
-        paperBase.entrySet().forEach(entry -> {
-            action.appendToActionResultByLambda.accept(entry.getValue());
-        });
-        switch (action.getBase()) {
-            case ID:
-            
-                break;
-            case TITLE:
-                break;
-            case AUTHOR:
-                break;
-            case JOURNAL:
-                break;
-            default:
-                break;
+        for(Entry<String, Paper> paper: this.paperBase.entrySet()) {
+          action.appendToActionResultByLambda.accept(paper.getValue());
         }
         action.sortFunc.get();
         return action.getActionResult();
