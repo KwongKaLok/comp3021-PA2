@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-13T11:27:38" hostname="KadeAir-6" time="0.013">
+<testsuite name="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-14T10:23:13" hostname="KadeAir-6" time="0.01">
   <properties/>
-  <testcase name="testSortPaperAction_SortByAuthor()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.006"/>
+  <testcase name="testSortPaperAction_SortByAuthor()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.004"/>
   <testcase name="testSortPaperAction_SortByTitle()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.002"/>
-  <testcase name="testSortPaperAction_ActionsSize()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.002"/>
-  <testcase name="testSortPaperAction_SortByID()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.001"/>
-  <testcase name="testSortPaperAction_SortByJournal()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.002"/>
+  <testcase name="testSortPaperAction_ActionsSize()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.001"/>
+  <testcase name="testSortPaperAction_SortByID()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.002"/>
+  <testcase name="testSortPaperAction_SortByJournal()" classname="hk.ust.comp3021.actions.SortPaperActionByLambdaTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

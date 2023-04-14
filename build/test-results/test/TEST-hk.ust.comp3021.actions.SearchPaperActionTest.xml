@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hk.ust.comp3021.actions.SearchPaperActionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-13T11:27:38" hostname="KadeAir-6" time="0.009">
+<testsuite name="hk.ust.comp3021.actions.SearchPaperActionTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-04-14T10:23:13" hostname="KadeAir-6" time="0.009">
   <properties/>
   <testcase name="testSearchPaperAction_SearchByAuthor()" classname="hk.ust.comp3021.actions.SearchPaperActionTest" time="0.002"/>
   <testcase name="testSearchPaperAction_ActionsSize()" classname="hk.ust.comp3021.actions.SearchPaperActionTest" time="0.002"/>

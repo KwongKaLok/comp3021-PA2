@@ -38,7 +38,7 @@ public class ProfileStatisticalInformationActionByLambdaTest {
 
         StatisticalInformationAction action = new StatisticalInformationAction("Action_1", user, new Date(), InfoKind.AVERAGE);
         Map<String, Double> searchResult1 = engine.processStatisticalInformationActionByLambda(user, action);
-
+//        System.out.print(searchResult1.size());
         assertEquals(searchResult1.size(), 303);
         assertEquals(searchResult1.get("Guilherme Ottoni"), 1.0);
         assertEquals(searchResult1.get("Eric Goubault"), 2.0);

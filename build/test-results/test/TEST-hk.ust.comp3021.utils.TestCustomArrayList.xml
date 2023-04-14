@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="hk.ust.comp3021.utils.TestCustomArrayList" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-13T11:27:38" hostname="KadeAir-6" time="0.0">
+<testsuite name="hk.ust.comp3021.utils.TestCustomArrayList" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-14T10:23:13" hostname="KadeAir-6" time="0.001">
   <properties/>
   <testcase name="testCustomArrayListWithTypeString()" classname="hk.ust.comp3021.utils.TestCustomArrayList" time="0.0"/>
   <testcase name="testCustomArrayListWithTypePaper()" classname="hk.ust.comp3021.utils.TestCustomArrayList" time="0.0"/>

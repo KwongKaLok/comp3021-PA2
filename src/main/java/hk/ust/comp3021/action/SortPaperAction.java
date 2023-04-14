@@ -1,7 +1,6 @@
 package hk.ust.comp3021.action;
 
 import hk.ust.comp3021.resource.Paper;
-import hk.ust.comp3021.action.SortPaperAction.SortBase;
 import hk.ust.comp3021.person.User;
 import java.util.*;
 import java.util.Comparator;
@@ -57,7 +56,6 @@ public class SortPaperAction extends Action {
   /**
    * TODO `appendToActionResultByLambda` appends one paper into `actionResult`
    * each time.
-   * 
    * @param paper to be appended into `actionResult`
    * @return null
    */
@@ -66,7 +64,6 @@ public class SortPaperAction extends Action {
   /**
    * TODO `kindPredicate` determine whether the sort kind is
    * `SortKind.DESCENDING`.
-   * 
    * @param kind to be compared with `SortKind.DESCENDING`
    * @return boolean variable that indicates whether they are equal
    */
@@ -75,7 +72,6 @@ public class SortPaperAction extends Action {
   /**
    * TODO `comparator` requires you to implement four custom comparators for
    * different scenarios.
-   * 
    * @param paper to be sorted
    * @return Given the sort base, there are three conditions for the return: 1) if
    *         a = b then return 0; 2) if a > b, then return 1; 3) if a < b, then
@@ -84,7 +80,6 @@ public class SortPaperAction extends Action {
    *         equal; PS3: for the author comparison, we should compose the string
    *         of the author names separated by commas.
    */
-//    public Comparator<Paper> comparator;
   public Comparator<Paper> comparator = new Comparator<Paper>() {
     @Override
     public int compare(Paper paper1, Paper paper2) {
@@ -104,7 +99,6 @@ public class SortPaperAction extends Action {
           } else if (result < 0) {
             result = -1;
           }
-//                      
         }
         break;
       case TITLE:
@@ -126,9 +120,11 @@ public class SortPaperAction extends Action {
       case AUTHOR:
         if ((paper1 == null && paper2 != null) || (paper1.getAuthors().isEmpty() && !paper2.getAuthors().isEmpty())) {
           result = -1;
-        } else if ((paper1 != null && paper2 == null) || (!paper1.getAuthors().isEmpty() && paper2.getAuthors().isEmpty())) {
+        } else if ((paper1 != null && paper2 == null)
+            || (!paper1.getAuthors().isEmpty() && paper2.getAuthors().isEmpty())) {
           result = 1;
-        } else if ((paper1 == null && paper2 == null) || (paper1.getAuthors().isEmpty() && paper2.getAuthors().isEmpty())) {
+        } else if ((paper1 == null && paper2 == null)
+            || (paper1.getAuthors().isEmpty() && paper2.getAuthors().isEmpty())) {
           result = 0;
         } else {
           String authors1 = String.join(",", paper1.getAuthors());
@@ -157,6 +153,8 @@ public class SortPaperAction extends Action {
           }
         }
         break;
+      default:
+        break;
       }
       return result;
     }
@@ -164,7 +162,6 @@ public class SortPaperAction extends Action {
 
   /**
    * TODO `sortFunc` provides a unified interface for sorting papers
-   * 
    * @param a list of papers to be sorted into `actionResult`
    * @return `actionResult` that contains the papers sorted in the specified order
    */
